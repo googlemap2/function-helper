@@ -1,9 +1,15 @@
 {
   "name": "@hieutran2902/function-helper",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.2",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "type": "module",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "import": "./dist/index.mjs"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -15,5 +21,9 @@
     "url": "https://github.com/googlemap2/function-helper/issues"
   },
   "homepage": "https://github.com/googlemap2/function-helper#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+  }
+
 }
+
